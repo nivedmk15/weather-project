@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="weather-div">
+            <h2 class="title">Weather</h2>
+            <div class="container">
+                <div class="search-area">
+                    <form action="" class="form-control" method="post">
+                        {% csrf_token %}
+                    <div class="input-div">
+                         <input type="text" name="city" placeholder="Enter City Name to Search">
+                    </div>
+                   
+                    <button class="btn" type="submit">Search</button>
+                </form>
+                </div>
+                <div class="list-area">
+                    <div class="left-section">
+                        <div class="temp"> 34&deg;</div>
+                         <div class="place">KANNUR</div>
+                         <div class="date">2025-03-27</div>
+                     </div>
+                     <hr style="border: 1px solid rgb(255, 255, 254);">
+                     <div class="right-section">
+                         <div class="img">
+                             <img class="icon" src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" alt=""">
+                             <div class="description">Sunny weather</div>
+     
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

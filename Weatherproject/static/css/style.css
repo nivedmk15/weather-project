@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+}
+.weather-div{
+    height: 738.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    height: 300px;
+    width: 500px;
+    box-shadow: 0px 0px 15px rgba(96, 96, 96, 1);
+    border-radius: 20px;
+    
+}
+.list-area{
+    display: flex;
+    margin: 25px 20px 25px 80px;
+    height: 200px;
+}
+.left-section{
+    margin-top: 35px;
+    color: rgb(49, 62, 136);
+    align-items: center;
+
+}.temp{
+    font-weight: bold;
+    font-size: 35px;
+}
+.place{
+    letter-spacing: 2px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 10px 0;
+    
+}
+.date{
+    font-family: roboto;
+    font-size: 16px;
+}
+.right-section .description{
+    color: rgb(49, 62, 136);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.icon{
+    width: 60px;
+    margin-top: 15px;
+}
+.form-control{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.input-div input{
+    height: 22px;
+    width: 260px;
+    background-color: transparent;
+    border: 1px solid gray;
+    box-shadow: inset 0px 0px 5px rgba(113, 17, 222, 0.3);
+    border-radius: 5px;
+    font-family: roboto;
+    letter-spacing: 1px;
+    padding-left: 12px;
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid gray;
+    width: 65px;
+    border-radius: 5px;
+    margin-left: 2px;
+    height: 26px;
+    transition: color .2s;
+    transition: background-color 0.2s;
+    font-family: roboto;
+    letter-spacing: 1px;
+}
+.btn:hover{
+    background-color: rgb(49, 62, 136);
+    color: white;
+    cursor: pointer;
+}
+.btn:active{
+    background-color:  rgb(92, 105, 178);
+}
+
+.title{
+    color:  rgb(49, 62, 136);;
+}
