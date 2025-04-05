@@ -44,5 +44,15 @@
             </div>
         </div>
     </div>
+    {% if error_occured %}
+
+    <script>
+        window.onload(alert(
+            `Entered city weather not available
+default city's(kochi)weather fetched `
+        ))
+    </script>
+
+{% endif %}
 </body>
 </html>
