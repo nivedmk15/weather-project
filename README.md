@@ -1,0 +1,5 @@
+
+packages
+
+django
+requests
