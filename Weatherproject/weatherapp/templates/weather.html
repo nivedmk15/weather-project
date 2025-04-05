@@ -27,15 +27,15 @@
                 </div>
                 <div class="list-area">
                     <div class="left-section">
-                        <div class="temp"> 34&deg;</div>
-                         <div class="place">KANNUR</div>
-                         <div class="date">2025-03-27</div>
+                        <div class="temp"> {{temp}}&deg;</div>
+                         <div class="place">{{city | upper}}</div>
+                         <div class="date">{{date}}</div>
                      </div>
                      <hr style="border: 1px solid rgb(255, 255, 254);">
                      <div class="right-section">
                          <div class="img">
-                             <img class="icon" src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" alt=""">
-                             <div class="description">Sunny weather</div>
+                             <img class="icon" src="http://openweathermap.org/img/w/{{icon}}.png" alt=""">
+                             <div class="description">{{description}}</div>
      
                          </div>
                      </div>
